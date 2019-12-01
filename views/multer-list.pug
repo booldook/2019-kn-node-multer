@@ -1,8 +1,9 @@
 extends ./layout/multer.pug
 block title
-	.jumbotron Multer를 알아보자
+	.jumbotron 
+		h1 Multer를 알아보자
 block content
-	.div.my-3.py-3
+	.div.my-3.p-3.border.rounded
 		form(action="/multer" method="post" enctype="multipart/form-data")
 		div.py-2
 			input(type="text" name="title" class="form-control" placeholder="제목을 입력하세요.")
